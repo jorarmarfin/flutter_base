@@ -19,10 +19,29 @@ class DefaultTheme {
         foregroundColor: Colors.white,
       ),
       textTheme: TextTheme(
-        headline1: GoogleFonts.akayaTelivigala()
-//           headline1: GoogleFonts.akayaTelivigala(
-//               fontSize: 60, color: colorTextColor, fontWeight: FontWeight.bold)
-// //headline2-6,subtitle1-2,bodyText1-2,caption
-          )
-          );
+          headline1: GoogleFonts.akayaTelivigala(
+              fontSize: 60, color: Colors.white, fontWeight: FontWeight.bold)
+//headline2-6,subtitle1-2,bodyText1-2,caption
+          ));
+}
+
+BoxDecoration fondoScreen(String fondo) {
+  return BoxDecoration(
+    image: DecorationImage(image: AssetImage(fondo), fit: BoxFit.fill),
+  );
+}
+
+BoxDecoration containerEstiloBoton(color) {
+  return BoxDecoration(
+    color: color,
+    border: Border.all(color: Colors.white, width: 2.5),
+    borderRadius: BorderRadius.circular(20),
+  );
+}
+
+BoxDecoration containerEstiloRecuadro(color, radio) {
+  return BoxDecoration(
+    color: color,
+    borderRadius: BorderRadius.circular(radio),
+  );
 }

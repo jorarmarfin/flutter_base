@@ -1,10 +1,30 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_base/themes/default_theme.dart';
 
+import 'providers/providers.dart';
 import 'screens/screens.dart';
 
+import 'package:provider/provider.dart';
+
 void main() {
-  runApp(const MyApp());
+  runApp(const AppState());
+}
+
+class AppState extends StatelessWidget {
+  const AppState({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(
+          lazy: false,
+          create: (_) => DrupalProvider(),
+        ),
+      ],
+      child: const MyApp(),
+    );
+  }
 }
 
 class MyApp extends StatelessWidget {
@@ -14,11 +34,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Flutter Demo',
+        title: 'Flutter base',
         theme: DefaultTheme.base,
         initialRoute: HomeScreen.routerName,
         routes: {
           HomeScreen.routerName: (context) => const HomeScreen(),
+          ListadoScreen.routerName: (context) => const ListadoScreen(),
         });
   }
 }
