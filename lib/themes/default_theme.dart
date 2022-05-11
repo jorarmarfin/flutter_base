@@ -14,13 +14,11 @@ const icoNosotros = 'assets/icons/about.png';
 class DefaultTheme {
   static ThemeData base = ThemeData.light().copyWith(
       primaryColor: colorPrimaryColor,
-      appBarTheme: const AppBarTheme(
-        backgroundColor: colorPrimaryColor,
-        foregroundColor: Colors.white,
-      ),
+      appBarTheme: const AppBarTheme(backgroundColor: colorPrimaryColor),
       textTheme: TextTheme(
           headline1: GoogleFonts.akayaTelivigala(
-              fontSize: 60, color: Colors.white, fontWeight: FontWeight.bold)
+              fontSize: 60, color: Colors.white, fontWeight: FontWeight.bold),
+          bodyText2: const TextStyle(color: Colors.black)
 //headline2-6,subtitle1-2,bodyText1-2,caption
           ));
 }

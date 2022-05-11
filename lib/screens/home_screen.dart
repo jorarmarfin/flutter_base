@@ -9,7 +9,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Ejemplo'),
+        title: const Text('Flutter Base'),
       ),
       body: Center(
         child: Column(children: [
@@ -18,6 +18,20 @@ class HomeScreen extends StatelessWidget {
             color: Colors.blue,
             onPressed: () {
               Navigator.pushNamed(context, 'listado');
+            },
+          ),
+          MaterialButton(
+            child: const Text('Contador'),
+            color: Colors.blue,
+            onPressed: () {
+              Navigator.pushNamed(context, 'contador');
+            },
+          ),
+          MaterialButton(
+            child: const Text('List View'),
+            color: Colors.blue,
+            onPressed: () {
+              Navigator.pushNamed(context, 'listview1');
             },
           ),
         ]),

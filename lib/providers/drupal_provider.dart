@@ -7,7 +7,7 @@ import '../models/models.dart';
 
 class DrupalProvider extends ChangeNotifier {
   final String _baseUrl = 'https://emanuel.sahost.org';
-final List<Libro> libros = [];
+  final List<Libro> libros = [];
 
   Future getLibros() async {
     var url = Uri.parse('$_baseUrl/api/biblioteca?_format=json');
@@ -16,7 +16,7 @@ final List<Libro> libros = [];
     final str = jsonEncode(json);
     // ignore: avoid_print
     print(str);
-    final libros = Libro.fromJson(str;)
+    final libros = Libro.fromJson(str);
     // ignore: avoid_print
     print(libros);
     // final decodeData = jsonDecode(response.body);
