@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_base/themes/default_theme.dart';
 
 import '../components/components.dart';
 
@@ -17,6 +18,10 @@ class HomeScreen extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(15.0),
           child: ListView(children: [
+            const CircleAvatar(
+              child: Text('SL'),
+              backgroundColor: colorPrincipal,
+            ),
             MaterialButton(
               child: const Text('Listado de libros'),
               color: Colors.blue,
