@@ -42,6 +42,8 @@ class MyApp extends StatelessWidget {
           ListadoScreen.routerName: (context) => const ListadoScreen(),
           ContadorScreen.routerName: (context) => const ContadorScreen(),
           ListView1Screen.routerName: (context) => const ListView1Screen(),
+          AnimatedScreen.routerName: (context) => const AnimatedScreen(),
+          InputsScreen.routerName: (context) => const InputsScreen(),
         });
   }
 }
