@@ -27,7 +27,18 @@ class DefaultTheme {
           style: ElevatedButton.styleFrom(
         primary: colorPrincipal,
         shape: const StadiumBorder(),
-      )));
+      )),
+      inputDecorationTheme: const InputDecorationTheme(
+          floatingLabelStyle: TextStyle(color: colorPrincipal),
+          enabledBorder: OutlineInputBorder(
+              borderSide: BorderSide(color: colorPrincipal),
+              borderRadius: BorderRadius.all(Radius.circular(10))),
+          focusedBorder: OutlineInputBorder(
+              borderSide: BorderSide(color: colorPrincipal),
+              borderRadius: BorderRadius.all(Radius.circular(10))),
+          border: OutlineInputBorder(
+              borderSide: BorderSide(color: colorPrincipal),
+              borderRadius: BorderRadius.all(Radius.circular(10)))));
 }
 
 // final ButtonStyle raisedButtonStyle = ElevatedButton.styleFrom(

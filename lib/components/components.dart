@@ -1,1 +1,1 @@
-export 'package:flutter_base/components/co_imagen.dart';
+export 'package:flutter_base/components/component_imagen.dart';

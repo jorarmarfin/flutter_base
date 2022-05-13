@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../themes/default_theme.dart';
 
-class CoImagen extends StatelessWidget {
-  const CoImagen({
+class ComponentImagen extends StatelessWidget {
+  const ComponentImagen({
     Key? key,required this.imagen,required this.ancho,required this.alto,
   }) : super(key: key);
   final String imagen;

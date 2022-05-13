@@ -87,7 +87,7 @@ class HomeScreen extends StatelessWidget {
                       width: 200,
                       child: Center(child: Text('My Card'))),
                 ),
-                const CoImagen(
+                const ComponentImagen(
                   alto: 230,
                   ancho: double.infinity,
                   imagen:
