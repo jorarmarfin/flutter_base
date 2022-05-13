@@ -1,0 +1,1 @@
+export 'package:flutter_base/components/co_imagen.dart';

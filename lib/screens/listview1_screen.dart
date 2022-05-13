@@ -10,21 +10,16 @@ class ListView1Screen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(title: const Text('Listview 1')),
-        body: ListView(
-          children: [
-            ...opciones
-                .map((e) => ListTile(
-                      title: Text(
-                        e,
-                        style: const TextStyle(color: Colors.black),
-                      ),
-                      trailing: const Icon(Icons.arrow_forward_ios_outlined),
-                    ))
-                .toList(),
-            const Divider()
-
-            // ListTile(title: Text('Item 1')),
-          ],
-        ));
+        body: ListView.separated(
+            itemBuilder: (context, index) => ListTile(
+                  title: Text(
+                    opciones[index],
+                    style: const TextStyle(color: Colors.black),
+                  ),
+                  trailing: const Icon(Icons.arrow_forward_ios_rounded),
+                  onTap: () => {},
+                ),
+            separatorBuilder: (_, __) => const Divider(),
+            itemCount: opciones.length));
   }
 }
