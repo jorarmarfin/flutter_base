@@ -57,6 +57,11 @@ class HomeScreen extends StatelessWidget {
                     child: const Text('Animated screen')),
                 ElevatedButton(
                     onPressed: () {
+                      Navigator.pushNamed(context, 'lista2');
+                    },
+                    child: const Text('listview2')),
+                ElevatedButton(
+                    onPressed: () {
                       showDialog(
                           barrierDismissible: true,
                           context: context,

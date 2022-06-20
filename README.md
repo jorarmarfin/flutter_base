@@ -19,3 +19,4 @@ mkdir -p assets/data assets/icons assets/images lib/screens lib/providers lib/co
 * flutter pub add font_awesome_flutter
 * flutter pub add google_fonts
 * flutter pub add url_launcher
+* flutter pub add flutter_share
